@@ -24,3 +24,7 @@ steps:
 - script: |
     npm run build
   displayName: 'npm install and build'
+
+- task: WhiteSource@21
+  inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
